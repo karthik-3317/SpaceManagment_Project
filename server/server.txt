@@ -1,0 +1,23 @@
+const {MongoClient} = require("mongodb")
+
+const express =require("express");
+
+const cors = require("cors");
+
+const app = express();
+
+app.use(express());
+app.use(cors.json());
+
+const uri = .....................................
+
+const client = new MongoClient(uri);
+
+client.connect()
+
+
+const db = client.db("varsha")
+
+const collection = db.collection("anyhow")
+
+

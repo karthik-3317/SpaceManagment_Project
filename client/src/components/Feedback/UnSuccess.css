@@ -1,0 +1,75 @@
+
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.unsuccess-message {
+    background-color: rgba(244, 123, 123,0.5);
+    border: 1px solid #ed0b0b;
+    color: #eb0808;
+    margin-bottom: 20px;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.unsuccess-message h2 {
+    margin-top: 0;
+    position: relative;
+    animation: success 1.5s forwards;
+}
+
+@keyframes success {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.order-details {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+.order-details h3 {
+    margin-top: 0;
+}
+
+.order-details p {
+    margin: 10px 0;
+}
+
+.unbutton {
+    background-color: #eb0808;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.unbutton:hover {
+    background-color: #ff2204;
+}

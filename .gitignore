@@ -1,0 +1,8 @@
+/client/node_modules
+/client/.env
+/client/key.txt
+/client/.DS_Store
+/api/node_modules
+/api/.editorconfig
+/api/.env
+/server/node_modules

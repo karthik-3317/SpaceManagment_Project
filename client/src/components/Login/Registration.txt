@@ -1,0 +1,25 @@
+import React from 'react'
+import './Registration.css'
+import { Link } from 'react-router-dom'
+const Registration = () => {
+  return (
+    <div className='RegContainer'>
+       <main className='RegMain'>
+        <form id="login_form" class="form_class" action="login/login-access.php" method="post">
+            <div class="form_div">
+                <label>Login:</label>
+                <input class="field_class" name="login_txt" type="text" placeholder="Enter Your Name" autofocus/>
+                <label>Password:</label>
+                <input id="pass" class="field_class" name="password_txt" type="password" placeholder="Enter Your Password"/>
+                <button class="submit_class" type="submit" form="login_form" onclick="return validarLogin()">Enter</button>
+            </div>
+            <div class="info_div">
+                <p>Don't Have An Account? <Link to="/login">Register Here</Link></p>
+            </div>
+        </form>
+    </main>
+    </div>
+  )
+}
+
+export default Registration
